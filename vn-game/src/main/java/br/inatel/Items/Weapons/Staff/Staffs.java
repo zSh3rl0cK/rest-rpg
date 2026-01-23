@@ -2,6 +2,11 @@ package br.inatel.Items.Weapons.Staff;
 
 import br.inatel.Items.Items;
 
-public class Staffs extends Items {
-    // todo: mandatory when casting a spell, may increase spells effectiveness
+public abstract class Staffs extends Items {
+
+    protected float magicPowerMultiplier;
+
+    public float getMagicPowerMultiplier() {
+        return magicPowerMultiplier;
+    }
 }
