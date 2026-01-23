@@ -3,31 +3,35 @@ package br.inatel.Spells;
 public abstract class Spells {
 
     protected String name;
-    protected int mpCost;
+    protected int manaCost;
+    protected SpellType type;
     protected float basePower;
 
-    public Spells(String name, int mpCost, float basePower) {
+    public Spells(String name, int manaCost, SpellType type, float basePower) {
         this.name = name;
-        this.mpCost = mpCost;
+        this.manaCost = manaCost;
+        this.type = type;
         this.basePower = basePower;
     }
 
-    public float calculateFinalPower(float staffMultiplier) {
-        return basePower * staffMultiplier;
-    }
+    public float calculateEffect(float intelligence, float presence) {
 
-    public void cast(float finalPower) {
-        // Por enquanto apenas representação do efeito
-        System.out.println(
-                name + " foi conjurado com poder " + finalPower
-        );
+        return switch (type) {
+            case DAMAGE -> basePower + (intelligence * 2);
+            case HEAL, BUFF, DEBUFF -> basePower + (presence * 2) + intelligence;
+            default -> basePower;
+        };
     }
 
     public String getName() {
         return name;
     }
 
-    public int getMpCost() {
-        return mpCost;
+    public int getManaCost() {
+        return manaCost;
+    }
+
+    public SpellType getType() {
+        return type;
     }
 }
