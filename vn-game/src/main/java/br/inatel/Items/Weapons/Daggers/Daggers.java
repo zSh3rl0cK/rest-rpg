@@ -1,4 +1,18 @@
 package br.inatel.Items.Weapons.Daggers;
 
-public class Daggers {
+import br.inatel.Items.Items;
+
+public abstract class Daggers extends Items {
+
+    protected float baseDamage;
+    protected float dexScaling;
+    protected float critChance;
+
+    public float calculateDamage(float dexterity) {
+        return baseDamage + (dexterity * dexScaling);
+    }
+
+    public float getCritChance() {
+        return critChance;
+    }
 }
