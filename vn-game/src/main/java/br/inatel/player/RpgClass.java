@@ -2,6 +2,7 @@ package br.inatel.player;
 
 import br.inatel.LivingBeing;
 import br.inatel.Items.Items;
+import br.inatel.player.attributes.Attributes;
 
 import java.util.HashMap;
 
@@ -10,40 +11,46 @@ public abstract class RpgClass extends LivingBeing {
     protected float expPoints;
     protected int hp;
     protected int mp;
+
+    protected Attributes attributes;
     protected HashMap<Integer, Items> inventory;  // Amount x Item
 
-    protected float expToLevelup; // Todo: level hardcoded isso deverá ser uma variavel num arc config
+    protected float expToLevelup; // TODO: mover para config
 
-    public RpgClass(int hp, int mp) {
+    public RpgClass(int hp, int mp, int initialAttributePoints) {
         this.level = 1;
         this.hp = hp;
         this.mp = mp;
         this.expPoints = 0;
+        this.attributes = new Attributes(initialAttributePoints);
+        this.inventory = new HashMap<>();
     }
+
+    // ----------------- EXPERIÊNCIA -----------------
 
     public void addExperience(float exp) {
         expPoints += exp;
 
         if (expPoints >= expToLevelup) {
-            expPoints = expToLevelup - expPoints;
+            expPoints = expPoints - expToLevelup;
             level++;
-
             levelUp();
         }
     }
 
-    // todo: os valores incrementados no level up devem ser uma variavel num arc de config (ta hardcoded)
     public void levelUp() {
         this.hp += 10;
         this.mp += 10;
+        this.attributes.gainPoint();
     }
+
+    // ----------------- INVENTÁRIO -----------------
 
     public void addNewInventoryItem(Items item, int amount) {
         if (inventory.size() < 5) {
-            this.inventory.put(amount, item);
+            inventory.put(amount, item);
         }
-
-        // Todo: criar e exceção de inventario cheio e substituir o 5 por um valor em config de espaço inicial
+        // TODO: exceção de inventário cheio
     }
 
     // ---------- Getters e Setters ---------------
@@ -52,23 +59,15 @@ public abstract class RpgClass extends LivingBeing {
         return level;
     }
 
-    public void setLevel(int level) {
-        this.level = level;
-    }
-
     public int getHp() {
         return hp;
-    }
-
-    public void setHp(int hp) {
-        this.hp = hp;
     }
 
     public int getMp() {
         return mp;
     }
 
-    public void setMp(int mp) {
-        this.mp = mp;
+    public Attributes getAttributes() {
+        return attributes;
     }
 }
