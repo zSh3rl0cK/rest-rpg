@@ -1,4 +1,21 @@
 package br.inatel.Items.Weapons.Archs;
 
-public class Archs {
+import br.inatel.Items.Items;
+
+public abstract class Archs extends Items {
+
+    protected float baseDamage;
+    protected float damageMultiplier;
+
+    public float calculateFinalDamage() {
+        return baseDamage * damageMultiplier;
+    }
+
+    public float getBaseDamage() {
+        return baseDamage;
+    }
+
+    public float getDamageMultiplier() {
+        return damageMultiplier;
+    }
 }
