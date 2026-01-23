@@ -1,10 +1,28 @@
-# RPG em Java
+# Java REST RPG Game
 
 ## Visão Geral
 
-Este projeto tem como objetivo o desenvolvimento de um mini jogo de RPG implementado **inteiramente em Java**, com **futura integração a um banco de dados MySQL**. A aplicação será estruturada como uma **API REST**, pensada para ser consumida por uma aplicação externa, a qual seria o jogo em si.
+Este projeto tem como objetivo o desenvolvimento de um mini jogo de RPG implementado **inteiramente em Java**, com **integração a um banco de dados MySQL**. A aplicação será estruturada como uma **API REST**, pensada para ser consumida por uma aplicação externa, a qual seria onde o jogo rodaria de fato.
 
 O projeto também serve como base prática para o estudo e aplicação do **Spring Framework**, especialmente Spring Boot e conceitos de arquitetura backend.
+
+---
+
+## Arquitetura e Abordagem
+
+Este projeto não executa o jogo diretamente no backend. Em vez disso, ele funciona como um motor das regras e um tipo de gerenciador dos de estados, exposto através da API REST.
+
+### A aplicação backend é responsável por:
+- Validar ações do jogador (ataques, uso de feitiços, movimentação, etc.)
+- Aplicar as regras do RPG
+- Atualizar e persistir o estado do jogo (personagens, combates, expedições)
+- Retornar o novo estado para o cliente
+
+### Assim, evitando:
+- API rodando em tempo real
+- loops infinitos ou lógica contínua no servidor
+
+Essa abordagem permite que o projeto seja escalável, testável e alinhado com boas práticas de APIs REST, ao mesmo tempo em que mantém a complexidade e profundidade de um jogo de RPG. 
 
 ---
 
@@ -13,7 +31,7 @@ O projeto também serve como base prática para o estudo e aplicação do **Spri
 * Projeto em estágio inicial
 * Estrutura base de classes em desenvolvimento
 * História principal ainda em expansão
-* Integração com Spring e MySQL planejada
+* Integração com Spring e MySQL em estágio inicial
 
 ## História Base do Jogo
 
