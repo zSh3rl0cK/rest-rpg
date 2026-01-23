@@ -1,4 +1,4 @@
-package br.inatel.player;
+package br.inatel.player.attributes;
 
 public enum AttributeType {
     STR,   // Strength

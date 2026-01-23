@@ -1,4 +1,4 @@
-package br.inatel.player;
+package br.inatel.player.attributes;
 
 import java.util.EnumMap;
 import java.util.Map;
