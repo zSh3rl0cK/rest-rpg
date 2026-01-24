@@ -1,7 +1,11 @@
 package br.inatel.models.dice;
 
+import org.hibernate.annotations.Comment;
+import org.springframework.stereotype.Component;
+
 import java.util.Random;
 
+@Component
 public class Dices {
 
     private final Random random = new Random();
