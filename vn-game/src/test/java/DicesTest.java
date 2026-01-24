@@ -1,4 +1,4 @@
-import br.inatel.dice.Dices;
+import br.inatel.models.dice.Dices;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
