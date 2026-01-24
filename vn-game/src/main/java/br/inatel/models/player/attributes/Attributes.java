@@ -1,8 +1,13 @@
 package br.inatel.models.player.attributes;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import java.util.EnumMap;
 import java.util.Map;
 
+@Getter
+@Setter
 public class Attributes {
 
     private Map<AttributeType, Integer> attributes;
@@ -32,9 +37,5 @@ public class Attributes {
 
     public void gainPoint() {
         availablePoints++;
-    }
-
-    public int getAvailablePoints() {
-        return availablePoints;
     }
 }

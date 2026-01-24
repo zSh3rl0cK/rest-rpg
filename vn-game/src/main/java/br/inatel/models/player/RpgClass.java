@@ -3,9 +3,13 @@ package br.inatel.models.player;
 import br.inatel.models.LivingBeing;
 import br.inatel.models.Items.Items;
 import br.inatel.models.player.attributes.Attributes;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.util.HashMap;
 
+@Getter
+@Setter
 public abstract class RpgClass extends LivingBeing {
     protected int level;
     protected float expPoints;
@@ -47,21 +51,5 @@ public abstract class RpgClass extends LivingBeing {
             inventory.put(amount, item);
         }
         // TODO: exceção de inventário cheio
-    }
-
-    public int getLevel() {
-        return level;
-    }
-
-    public int getHp() {
-        return hp;
-    }
-
-    public int getMp() {
-        return mp;
-    }
-
-    public Attributes getAttributes() {
-        return attributes;
     }
 }

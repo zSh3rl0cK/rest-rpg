@@ -1,5 +1,10 @@
 package br.inatel.models.Spells;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public abstract class Spells {
 
     protected String name;
@@ -21,17 +26,5 @@ public abstract class Spells {
             case HEAL, BUFF, DEBUFF -> basePower + (presence * 2) + intelligence;
             default -> basePower;
         };
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public int getManaCost() {
-        return manaCost;
-    }
-
-    public SpellType getType() {
-        return type;
     }
 }
