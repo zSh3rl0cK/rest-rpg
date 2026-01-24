@@ -5,10 +5,11 @@ import br.inatel.models.Items.Weapons.Staff.Staffs;
 import br.inatel.models.Spells.Spells;
 import br.inatel.models.player.RpgClass;
 import br.inatel.models.player.attributes.AttributeType;
+import br.inatel.models.player.classes.utils.SpellUser;
 
 import java.util.HashMap;
 
-public class Cleric extends RpgClass {
+public class Cleric extends RpgClass implements SpellUser {
     private Staffs staffEquipped;
     private HashMap<String, Spells> spells;
 
@@ -18,10 +19,12 @@ public class Cleric extends RpgClass {
         this.spells = new HashMap<>();
     }
 
+    @Override
     public void learnSpell(Spells spell) {
         spells.put(spell.getName(), spell);
     }
 
+    @Override
     public float castSpell(String spellName) {
 
         Spells spell = spells.get(spellName);
