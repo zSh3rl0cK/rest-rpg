@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>br.inatel.vn</groupId>
-    <artifactId>VisualNovelGame</artifactId>
+    <artifactId>vn-game</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
