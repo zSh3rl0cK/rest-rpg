@@ -4,6 +4,7 @@ import br.inatel.models.Items.Weapons.Spears.BaseSpear;
 import br.inatel.models.Items.Weapons.Spears.Spears;
 import br.inatel.models.player.RpgClass;
 import br.inatel.models.player.attributes.AttributeType;
+import br.inatel.models.player.classes.utils.DruidForm;
 
 public class Druid extends RpgClass {
 
