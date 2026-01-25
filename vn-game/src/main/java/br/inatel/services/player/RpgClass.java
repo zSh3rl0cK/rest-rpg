@@ -1,5 +1,6 @@
 package br.inatel.models.player;
 
+import br.inatel.exception.FullInventoryException;
 import br.inatel.models.LivingBeing;
 import br.inatel.models.Items.Items;
 import br.inatel.models.player.attributes.Attributes;
@@ -46,10 +47,12 @@ public abstract class RpgClass extends LivingBeing {
         this.attributes.gainPoint();
     }
 
-    public void addNewInventoryItem(Items item, int amount) {
+    public void addNewInventoryItem(Items item, int amount) throws FullInventoryException {
         if (inventory.size() < 5) {
             inventory.put(amount, item);
         }
-        // TODO: exceção de inventário cheio
+        else {
+            throw new FullInventoryException("Your inventory is full!");
+        }
     }
 }
