@@ -1,4 +1,4 @@
-package br.inatel.models.Items.Weapons.Daggers;
+package br.inatel.services.Items.Weapons.Daggers;
 
 public class BaseDagger extends Daggers {
 

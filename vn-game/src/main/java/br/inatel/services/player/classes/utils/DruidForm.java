@@ -1,4 +1,4 @@
-package br.inatel.models.player.classes.utils;
+package br.inatel.services.player.classes.utils;
 
 public enum DruidForm {
     HUMAN,

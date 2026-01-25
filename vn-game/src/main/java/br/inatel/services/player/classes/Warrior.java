@@ -1,9 +1,9 @@
-package br.inatel.models.player.classes;
+package br.inatel.services.player.classes;
 
-import br.inatel.models.Items.Weapons.Swords.BaseSword;
-import br.inatel.models.Items.Weapons.Swords.Swords;
-import br.inatel.models.player.RpgClass;
-import br.inatel.models.player.attributes.AttributeType;
+import br.inatel.services.Items.Weapons.Swords.BaseSword;
+import br.inatel.services.Items.Weapons.Swords.Swords;
+import br.inatel.services.player.RpgClass;
+import br.inatel.services.player.attributes.AttributeType;
 
 public class Warrior extends RpgClass {
 

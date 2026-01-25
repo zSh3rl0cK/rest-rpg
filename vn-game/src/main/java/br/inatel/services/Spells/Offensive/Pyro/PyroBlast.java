@@ -1,7 +1,7 @@
-package br.inatel.models.Spells.Offensive.Pyro;
+package br.inatel.services.Spells.Offensive.Pyro;
 
-import br.inatel.models.Spells.SpellType;
-import br.inatel.models.Spells.Spells;
+import br.inatel.services.Spells.SpellType;
+import br.inatel.services.Spells.Spells;
 
 public class PyroBlast extends Spells {
     public PyroBlast(String name) {

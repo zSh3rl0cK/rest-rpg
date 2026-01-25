@@ -1,4 +1,4 @@
-package br.inatel.models.Items.Shields;
+package br.inatel.services.Items.Shields;
 
 public class WoodShield {
 }

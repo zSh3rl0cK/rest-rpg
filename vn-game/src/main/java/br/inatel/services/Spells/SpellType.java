@@ -1,4 +1,4 @@
-package br.inatel.models.Spells;
+package br.inatel.services.Spells;
 
 public enum SpellType {
     DAMAGE,

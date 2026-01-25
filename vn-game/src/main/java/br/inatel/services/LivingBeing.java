@@ -1,4 +1,4 @@
-package br.inatel.models;
+package br.inatel.services;
 
 import lombok.Getter;
 import lombok.Setter;

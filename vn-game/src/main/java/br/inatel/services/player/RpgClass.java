@@ -1,9 +1,9 @@
-package br.inatel.models.player;
+package br.inatel.services.player;
 
 import br.inatel.exception.FullInventoryException;
-import br.inatel.models.LivingBeing;
-import br.inatel.models.Items.Items;
-import br.inatel.models.player.attributes.Attributes;
+import br.inatel.services.LivingBeing;
+import br.inatel.services.Items.Items;
+import br.inatel.services.player.attributes.Attributes;
 import lombok.Getter;
 import lombok.Setter;
 

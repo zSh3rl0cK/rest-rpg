@@ -1,4 +1,4 @@
-package br.inatel.models.Items;
+package br.inatel.services.Items;
 
 public class Items {
 }

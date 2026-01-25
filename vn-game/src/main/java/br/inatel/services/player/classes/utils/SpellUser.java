@@ -1,6 +1,6 @@
-package br.inatel.models.player.classes.utils;
+package br.inatel.services.player.classes.utils;
 
-import br.inatel.models.Spells.Spells;
+import br.inatel.services.Spells.Spells;
 
 public interface SpellUser {
     public float castSpell(String spellname);

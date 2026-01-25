@@ -1,4 +1,4 @@
-package br.inatel.models.player.attributes;
+package br.inatel.services.player.attributes;
 
 import lombok.Getter;
 import lombok.Setter;

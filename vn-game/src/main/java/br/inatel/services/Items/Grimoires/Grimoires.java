@@ -1,4 +1,4 @@
-package br.inatel.models.Items.Grimoires;
+package br.inatel.services.Items.Grimoires;
 
 public class Grimoires {
 }

@@ -1,9 +1,9 @@
-package br.inatel.models.player.classes;
+package br.inatel.services.player.classes;
 
-import br.inatel.models.Items.Weapons.Daggers.BaseDagger;
-import br.inatel.models.Items.Weapons.Daggers.Daggers;
-import br.inatel.models.player.RpgClass;
-import br.inatel.models.player.attributes.AttributeType;
+import br.inatel.services.Items.Weapons.Daggers.BaseDagger;
+import br.inatel.services.Items.Weapons.Daggers.Daggers;
+import br.inatel.services.player.RpgClass;
+import br.inatel.services.player.attributes.AttributeType;
 
 public class Rogue extends RpgClass {
 

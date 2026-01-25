@@ -1,6 +1,6 @@
-package br.inatel.models.Items.Weapons.Daggers;
+package br.inatel.services.Items.Weapons.Daggers;
 
-import br.inatel.models.Items.Items;
+import br.inatel.services.Items.Items;
 
 public abstract class Daggers extends Items {
 

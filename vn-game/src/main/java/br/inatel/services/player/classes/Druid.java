@@ -1,10 +1,10 @@
-package br.inatel.models.player.classes;
+package br.inatel.services.player.classes;
 
-import br.inatel.models.Items.Weapons.Spears.BaseSpear;
-import br.inatel.models.Items.Weapons.Spears.Spears;
-import br.inatel.models.player.RpgClass;
-import br.inatel.models.player.attributes.AttributeType;
-import br.inatel.models.player.classes.utils.DruidForm;
+import br.inatel.services.Items.Weapons.Spears.BaseSpear;
+import br.inatel.services.Items.Weapons.Spears.Spears;
+import br.inatel.services.player.RpgClass;
+import br.inatel.services.player.attributes.AttributeType;
+import br.inatel.services.player.classes.utils.DruidForm;
 
 public class Druid extends RpgClass {
 

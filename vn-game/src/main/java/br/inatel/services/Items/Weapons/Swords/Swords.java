@@ -1,6 +1,6 @@
-package br.inatel.models.Items.Weapons.Swords;
+package br.inatel.services.Items.Weapons.Swords;
 
-import br.inatel.models.Items.Items;
+import br.inatel.services.Items.Items;
 
 public abstract class Swords extends Items {
 

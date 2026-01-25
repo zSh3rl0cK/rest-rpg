@@ -1,6 +1,6 @@
-package br.inatel.models.Items.Weapons;
+package br.inatel.services.Items.Weapons;
 
-import br.inatel.models.Items.Items;
+import br.inatel.services.Items.Items;
 
 public abstract class Weapon extends Items {
     protected String name;
