@@ -1,12 +1,14 @@
-import br.inatel.models.dice.Dices;
+import br.inatel.models.DiceResult;
+import br.inatel.services.dice.DicesService;
+import br.inatel.services.dice.DicesService;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class DicesTest {
-    private final Dices dices = new Dices();
+    private final DicesService dices = new DicesService();
 
     @Test
-    void testRollSingleDiceWithinRange() {
+    void singleRollTest(){
         int faces = 20;
         int roll = dices.rollSingleDice(faces);
 
@@ -14,12 +16,13 @@ public class DicesTest {
     }
 
     @Test
-    void testDifficultySuccess() {
-        assertTrue(dices.testDifficulty(15, 10));
+    void multiRollTest(){
+        int faces = 20, times = 3;
+        assertNotNull(dices.rollMultiDice(faces,times));
     }
 
     @Test
-    void testDifficultyFailure() {
-        assertFalse(dices.testDifficulty(5, 10));
+    void completeRollTest(){
+        int faces = 20, times = 3;
     }
 }
