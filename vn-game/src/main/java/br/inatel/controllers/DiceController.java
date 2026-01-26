@@ -2,7 +2,6 @@ package br.inatel.controllers;
 
 import br.inatel.services.dice.DicesService;
 import br.inatel.models.DiceResult;
-import br.inatel.services.dice.DicesService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
