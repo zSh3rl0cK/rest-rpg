@@ -1,4 +1,7 @@
 package br.inatel.models;
 
-public record PlayerRequest() {
+public record PlayerRequest(
+        String name,
+        String password
+) {
 }
