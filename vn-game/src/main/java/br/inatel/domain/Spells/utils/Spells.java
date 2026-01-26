@@ -1,4 +1,4 @@
-package br.inatel.services.Spells;
+package br.inatel.domain.Spells.utils;
 
 import lombok.Getter;
 import lombok.Setter;

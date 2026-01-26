@@ -1,7 +1,7 @@
-package br.inatel.services.Spells.Offensive.Hydro;
+package br.inatel.domain.Spells.Offensive.Hydro;
 
-import br.inatel.services.Spells.SpellType;
-import br.inatel.services.Spells.Spells;
+import br.inatel.domain.Spells.utils.SpellType;
+import br.inatel.domain.Spells.utils.Spells;
 
 public class WaterSpout extends Spells {
 

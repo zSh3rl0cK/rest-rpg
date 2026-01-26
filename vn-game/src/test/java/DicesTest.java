@@ -1,5 +1,3 @@
-import br.inatel.models.DiceResult;
-import br.inatel.services.dice.DicesService;
 import br.inatel.services.dice.DicesService;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;

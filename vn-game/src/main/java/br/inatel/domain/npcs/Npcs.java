@@ -1,4 +1,4 @@
-package br.inatel.services.npcs;
+package br.inatel.domain.npcs;
 
 public abstract class Npcs {
 
