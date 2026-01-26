@@ -1,4 +1,4 @@
-package br.inatel.services.Items.Grimoires;
+package br.inatel.domain.Items.Grimoires;
 
 public class BaseGrimoire {
 }

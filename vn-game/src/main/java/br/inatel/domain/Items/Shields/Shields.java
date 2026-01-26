@@ -1,4 +1,4 @@
-package br.inatel.services.Items.Shields;
+package br.inatel.domain.Items.Shields;
 
 public class Shields {
 }

@@ -1,6 +1,6 @@
-package br.inatel.services.Items.Weapons.Archs;
+package br.inatel.domain.Items.Weapons.Archs;
 
-import br.inatel.services.Items.Items;
+import br.inatel.domain.Items.Items;
 
 public abstract class Archs extends Items {
 

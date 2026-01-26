@@ -1,4 +1,4 @@
-package br.inatel.services.Items;
+package br.inatel.domain.Items;
 
 public class Items {
 }

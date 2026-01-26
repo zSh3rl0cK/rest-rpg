@@ -1,8 +1,8 @@
-package br.inatel.services.player.classes;
+package br.inatel.domain.player.classes;
 
-import br.inatel.services.Items.Weapons.Archs.Archs;
-import br.inatel.services.Items.Weapons.Archs.BaseArch;
-import br.inatel.services.player.classes.utils.RpgClass;
+import br.inatel.domain.Items.Weapons.Archs.Archs;
+import br.inatel.domain.Items.Weapons.Archs.BaseArch;
+import br.inatel.domain.player.classes.utils.RpgClass;
 
 public class Archer extends RpgClass {
 

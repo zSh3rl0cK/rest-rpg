@@ -1,9 +1,9 @@
-package br.inatel.services.player.classes.utils;
+package br.inatel.domain.player.classes.utils;
 
 import br.inatel.exception.FullInventoryException;
-import br.inatel.services.LivingBeing;
-import br.inatel.services.Items.Items;
-import br.inatel.services.player.attributes.Attributes;
+import br.inatel.domain.player.LivingBeing;
+import br.inatel.domain.Items.Items;
+import br.inatel.domain.player.attributes.Attributes;
 import lombok.Getter;
 import lombok.Setter;
 

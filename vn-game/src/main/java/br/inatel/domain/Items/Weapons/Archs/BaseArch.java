@@ -1,4 +1,4 @@
-package br.inatel.services.Items.Weapons.Archs;
+package br.inatel.domain.Items.Weapons.Archs;
 
 public class BaseArch extends Archs {
 

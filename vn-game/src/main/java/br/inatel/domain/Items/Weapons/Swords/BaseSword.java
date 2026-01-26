@@ -1,4 +1,4 @@
-package br.inatel.services.Items.Weapons.Swords;
+package br.inatel.domain.Items.Weapons.Swords;
 
 public class BaseSword extends Swords {
 

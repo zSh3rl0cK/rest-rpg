@@ -1,7 +1,7 @@
-package br.inatel.services.Items.Weapons.Staff;
+package br.inatel.domain.Items.Weapons.Staff;
 
-import br.inatel.services.Items.Items;
-import br.inatel.services.Spells.SpellType;
+import br.inatel.domain.Items.Items;
+import br.inatel.domain.Spells.utils.SpellType;
 
 public abstract class Staffs extends Items {
     protected float damageMultiplier;

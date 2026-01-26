@@ -1,11 +1,11 @@
-package br.inatel.services.player.classes;
+package br.inatel.domain.player.classes;
 
-import br.inatel.services.Spells.Spells;
-import br.inatel.services.Items.Weapons.Staff.BaseStaff;
-import br.inatel.services.Items.Weapons.Staff.Staffs;
-import br.inatel.services.player.attributes.AttributeType;
-import br.inatel.services.player.classes.utils.RpgClass;
-import br.inatel.services.player.classes.utils.SpellUser;
+import br.inatel.domain.Spells.utils.Spells;
+import br.inatel.domain.Items.Weapons.Staff.BaseStaff;
+import br.inatel.domain.Items.Weapons.Staff.Staffs;
+import br.inatel.domain.player.attributes.AttributeType;
+import br.inatel.domain.player.classes.utils.RpgClass;
+import br.inatel.domain.player.classes.utils.SpellUser;
 
 import java.util.HashMap;
 

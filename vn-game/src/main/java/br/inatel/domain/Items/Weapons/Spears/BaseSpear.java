@@ -1,4 +1,4 @@
-package br.inatel.services.Items.Weapons.Spears;
+package br.inatel.domain.Items.Weapons.Spears;
 
 public class BaseSpear extends Spears {
 

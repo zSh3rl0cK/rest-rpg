@@ -1,4 +1,4 @@
-package br.inatel.services.Items.Weapons.Staff;
+package br.inatel.domain.Items.Weapons.Staff;
 
 public class BaseStaff extends Staffs {
 
