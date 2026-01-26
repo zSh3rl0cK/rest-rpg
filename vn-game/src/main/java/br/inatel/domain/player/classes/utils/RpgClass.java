@@ -1,4 +1,4 @@
-package br.inatel.services.player;
+package br.inatel.services.player.classes.utils;
 
 import br.inatel.exception.FullInventoryException;
 import br.inatel.services.LivingBeing;

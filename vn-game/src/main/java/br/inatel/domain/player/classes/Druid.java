@@ -2,9 +2,9 @@ package br.inatel.services.player.classes;
 
 import br.inatel.services.Items.Weapons.Spears.BaseSpear;
 import br.inatel.services.Items.Weapons.Spears.Spears;
-import br.inatel.services.player.RpgClass;
 import br.inatel.services.player.attributes.AttributeType;
 import br.inatel.services.player.classes.utils.DruidForm;
+import br.inatel.services.player.classes.utils.RpgClass;
 
 public class Druid extends RpgClass {
 
