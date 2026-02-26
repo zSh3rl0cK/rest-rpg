@@ -11,5 +11,7 @@ public abstract class LivingBeing {
     protected int age;
     protected String gender;
     protected String description;
+    protected float weight;
+    protected float life;
 
 }
