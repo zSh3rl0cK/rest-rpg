@@ -27,4 +27,6 @@ public abstract class Spells {
             default -> basePower;
         };
     }
+
+    public abstract void castSpell(Spells spell);
 }
